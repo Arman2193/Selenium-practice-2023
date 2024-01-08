@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestNG Regression Suite" verbose="4" thread-count="10" parallel="tests" >
+
+	<test name="Google Test">
+
+	<parameter name="url" value="https://www.google.com" />
+	<parameter name="browser" value="chrome" />
+	
+	
+		<classes>
+			<class name="testngSessions.GoogleTest_class3"/>
+		</classes>
+	</test>
+	
+	<test name="Amazon Test">
+
+	<parameter name="url" value="https://www.amazon.com" />
+	<parameter name="browser" value="firefox" />	
+		<classes>
+			<class name="testngSessions.AmazonTest_class1"/>
+		</classes>
+	</test>
+	
+	<test name="Open cart Test">
+
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=common/home" />
+	<parameter name="browser" value="safari" />
+		<classes>
+			<class name="testngSessions.OpenCartTest_class3"/>
+		</classes>
+	</test>
+	
+	</suite>      
